@@ -7,9 +7,6 @@ def main():
     print("2. Subtraction (-)")
     print("3. Multiplication (*)")
     print("4. Division (/)")
-    print("5. Power (^)")
-    print("6. Square root (√)")
-    print("7. Modulo (%)")
     # More operations will be added by team members
     
     while True:
