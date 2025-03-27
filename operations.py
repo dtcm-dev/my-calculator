@@ -7,7 +7,7 @@ def subtract(num1, num2):
     return num1 - num2
 
 def multiply(num1, num2):
-    pass
+    return num1 * num2
 
 def divide(num1, num2):
     pass
@@ -25,11 +25,11 @@ def modulo(num1, num2):
         raise ValueError("Cannot modulo by zero.")
     return num1 % num2
 
-def average(arr_num):
-    pass
+def average(num1, num2):
+    return sum([num1, num2]) / len([num1, num2])
 
-def maximum(arr_num):
-    pass
+def maximum(num1, num2):
+    return max(num1, num2)
 
-def minimum(arr_num):
-    pass
+def minimum(num1, num2):
+    return min(num1, num2)
