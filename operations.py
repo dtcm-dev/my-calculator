@@ -19,11 +19,11 @@ def sqrt(num1):
 def modulo(num1, num2):
     pass
 
-def average(arr_num):
-    pass
+def average(num1, num2):
+    return sum([num1, num2]) / len([num1, num2])
 
-def maximum(arr_num):
-    pass
+def maximum(num1, num2):
+    return max(num1, num2)
 
-def minimum(arr_num):
-    pass
+def minimum(num1, num2):
+    return min(num1, num2)
