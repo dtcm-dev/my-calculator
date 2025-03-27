@@ -1,3 +1,5 @@
+import math
+
 def add(num1, num2):
     return num1 + num2
 
@@ -11,13 +13,17 @@ def divide(num1, num2):
     pass
 
 def power(num1, num2):
-    pass
+    return num1 ** num2
 
 def sqrt(num1):
-    pass
+    if num1 < 0:
+        raise ValueError("Cannot take square root of a negative number.")
+    return math.sqrt(num1)
 
 def modulo(num1, num2):
-    pass
+    if num2 == 0:
+        raise ValueError("Cannot modulo by zero.")
+    return num1 % num2
 
 def average(num1, num2):
     return sum([num1, num2]) / len([num1, num2])

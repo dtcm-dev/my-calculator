@@ -23,9 +23,12 @@ def main():
             break
             
         choice = int(choice)
-            
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        if choice == 6:
+            num1 = float(input("Enter number: "))
+            print(f"√{num1} = {operations.sqrt(num1)}")
+        else:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
         
         if choice == 1:
             # Addition function will be implemented in a feature branch
