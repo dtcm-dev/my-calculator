@@ -7,6 +7,9 @@ def main():
     print("2. Subtraction (-)")
     print("3. Multiplication (*)")
     print("4. Division (/)")
+    print("5. Power (^)")
+    print("6. Square root (√)")
+    print("7. Modulo (%)")
     # More operations will be added by team members
     
     while True:
@@ -17,9 +20,12 @@ def main():
             break
             
         choice = int(choice)
-            
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        if choice == 6:
+            num1 = float(input("Enter number: "))
+            print(f"√{num1} = {operations.sqrt(num1)}")
+        else:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
         
         if choice == 1:
             # Addition function will be implemented in a feature branch
@@ -33,6 +39,15 @@ def main():
         elif choice == 4:
             # Division function will be implemented in a feature branch
             print("Division feature not implemented yet.")
+        elif choice == 5:
+            # Power function will be implemented in a feature branch
+            print(f"{num1} ^ {num2} = {operations.power(num1, num2)}")
+        elif choice == 6:
+            # Square root function will be implemented in a feature branch
+            print(f"√{num1} = {operations.sqrt(num1)}")
+        elif choice == 7:
+            # Modulo function will be implemented in a feature branch
+            print(f"{num1} % {num2} = {operations.modulo(num1, num2)}")
         else:
             print("Invalid operation number.")
 
