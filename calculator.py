@@ -29,7 +29,7 @@ def main():
              print(f"{num1} - {num2} = {operations.subtract(num1, num2)}")
         elif choice == 3:
             # Multiplication function will be implemented in a feature branch
-            print("Multiplication feature not implemented yet.")
+            print(f"{num1} * {num2} = {operations.multiply(num1, num2)}")
         elif choice == 4:
             # Division function will be implemented in a feature branch
             print("Division feature not implemented yet.")
