@@ -22,11 +22,9 @@ def main():
         num2 = float(input("Enter second number: "))
         
         if choice == 1:
-            # Addition function will be implemented in a feature branch
             print(f"{num1} + {num2} = {operations.add(num1, num2)}")
         elif choice == 2:
-            # Subtraction function will be implemented in a feature branch
-            print("Subtraction feature not implemented yet.")
+            print(f"{num1} - {num2} = {operations.subtract(num1, num2)}")
         elif choice == 3:
             # Multiplication function will be implemented in a feature branch
             print("Multiplication feature not implemented yet.")
